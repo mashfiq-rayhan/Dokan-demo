@@ -1,0 +1,43 @@
+import "./App.module.css";
+import Loading from "./Components/UI/Loading/Loading";
+import Login from "./Containers/Login/Login";
+import Layout from "./HOC/Layout/Layout";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from "react-router-dom";
+// Test
+import Test from "./Test/Test";
+import SellerDashhboard from "./Containers/SellerDashboard/SellerDashhboard";
+
+const App = (props) => {
+	return (
+		<Router>
+			{/* <Loading /> */}
+			<Layout>
+				<Switch>
+					<Route>
+						<Route exact path="/">
+							<span>Hello Shopper To Home Page</span>
+						</Route>
+						<Route exact path="/login">
+							<Login />
+						</Route>
+						<Route exact path="/shop">
+							<span>Hello Shopper</span>
+						</Route>
+						<Route exact path="/dashboard">
+							<SellerDashhboard />
+						</Route>
+					</Route>
+				</Switch>
+
+				<Test />
+			</Layout>
+		</Router>
+	);
+};
+
+export default App;
