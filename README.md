@@ -40,7 +40,7 @@ Dokan is a full-stack e-commerce platform that connects sellers and customers in
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/ShaNaim/Dokan.git
+   git clone https://github.com/mashfiq-rayhan/Dokan-demo.git
    ```
 
 2. **Install dependencies:**
